@@ -1,71 +1,191 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
+:root {
+    /*Primary Colors*/
+    --peach: rgb(321, 129, 107);
+    --black: rgb(29, 28, 30);
+    --white: rgb(255, 255, 255);
+    /*Secondary Colors*/
+    --lightPeach: rgb(255, 173, 155);
+    --darkGrey: rgb(51, 49, 54);
+    --lightGrey: rgb(241, 243, 245);
+
+}
+
+
+/*Button classes
+-------------------
+*/
+.btn-dark-idle{
+    background-color: var(--white);
+}
+.btn-dark-idle:active{
+    background-color: var(--lightPeach);
+}
+
+.btn-light-idle {
+    background-color: var(--peach);
+}
+
+.btn-light-idle:active {
+    background-color: var(--lightPeach);
+}
+
+/*headers
+---------------
+*/
+h1, .h1{
+    font-size: 48px;
+    line-height: 48px;
+}
+
+h2, .h2 {
+    font-size: 40px;
+    line-height: 48px;
+}
+
+h3, .h3 {
+    font-size: 20px;
+    line-height: 26px;
+}
+
+/*Header
+---------
+*/
+header {
+    width: 100%;
+    height: 2.3%;
+    
+    
+}
+
+
 a.navbar-brand {
   white-space: normal;
   text-align: center;
   word-break: break-all;
 }
 
-/* Provide sufficient contrast against white background */
-a {
-  color: #0366d6;
-}
-
-.btn-primary {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
-}
-
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
-}
 
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
-  font-size: 14px;
-}
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-.border-top {
-  border-top: 1px solid #e5e5e5;
-}
-.border-bottom {
-  border-bottom: 1px solid #e5e5e5;
-}
-
-.box-shadow {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
-}
-
-button.accept-policy {
-  font-size: 1rem;
-  line-height: inherit;
-}
-
-/* Sticky footer styles
--------------------------------------------------- */
-html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    
+    /*min-height: 100%;*/
 }
 
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
+    /* Margin bottom by footer height */
+    font-family: Jost, sans-serif;
+    width: 100vh;
+    height: 2222px;
+    padding: 6%, 11%, 0, 11%;
+    overflow-x:hidden;
+    
 }
+
+.proper {
+    position: absolute;
+    width: 78%;
+    height: 94%;
+   
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index:1;
+    
+}
+.black-patch{
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+    height: 18%;
+    background-color:var(--black);
+}
+
 .footer {
   position: absolute;
   bottom: 0;
   width: 100%;
+  height: 28%;
+
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
+
 }
+    
+    .talk {
+        position:relative;
+        width: 100%;
+        height: 48%;
+        overflow: hidden;
+        background-color: var(--lightPeach);
+        border:1px solid var(--lightPeach);
+        border-radius: 7px;
+    }
+
+.talk-text {
+    width: 91%;
+    height: 51%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+        .talk-p{
+            width: 49%;
+            height:100%;
+        }
+            .talk-p h2{
+                height: 66%;
+                width: 58%;
+            }
+            .talk-p p{
+                width: 100%;
+                height: 35%;
+                line-height:26px;
+            }
+
+        .talk-btn{
+            width:14%;
+            height: 19%;
+        }
+    .talk-bg{
+        position:absolute;
+        top:-50%;
+        right: -10%;
+        z-index:0;
+    }
+
+.ft-cont{
+    height: 20%;
+        
+}
+.partial-nav{
+    width: 33%;
+}
+
+/*contact info*/
+    .contact-us{
+        line-height:26px;
+    }
+
+        .ft-Adress{
+            width: 66%;
+        }
+            .street, .mobile{
+                height: 100%;
+                width: 48%;
+            }
+            .mobile{
+
+            }
+
+    .social-media{
+        width: 17%;
+        height: 31%;
+    }
+    
