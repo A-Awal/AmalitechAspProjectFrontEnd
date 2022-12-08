@@ -23,7 +23,31 @@ namespace AmalitechAspProjectFrontEnd.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult WebDesign()
+        {
+            return View();
+        }
+
+        public IActionResult AppDesign()
+        {
+            return View();
+        }
+
+        public IActionResult GraphicDesign()
+        {
+            return View();
+        }
+
+        public IActionResult AboutUs()
+        {
+            return View();
+        }
+        public IActionResult Locations()
+        {
+            return View();
+        }
+
+        public IActionResult Contact()
         {
             return View();
         }

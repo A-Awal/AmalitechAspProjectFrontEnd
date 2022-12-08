@@ -1,8 +1,62 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+@section Styles{ 
+    <link rel="stylesheet" href="~/css/StyleIndex.css" />
+}
+<div class="index-content h-100 w-100 d-flex flex-column justify-content-between align-items-center">
+    <div class="pg-header d-flex justify-content-between align-items-center ">
+        <div class="pg-header-cmt d-flex flex-column justify-content-between">
+            <h1 class="text-white">Award-winning custom designs and digital branding solutions</h1>
+            <p class="text-white w-75">
+                With over 10 years in the industry, we are experienced in creating fully responsive websites, app design, and engaging brand experiences.
+                Find out more about our services.
+            </p>
+            <a asp-controller="" asp-action="" class="text-uppercase btn bg-white border w-25">Learn more</a>
+        </div>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+        <div class="pg-header-pic h-100 "></div>
+
+    </div>
+
+    <div class="pg-links d-flex justify-content-between w-100">   <partial name="_linksPartial" />  </div>
+
+        <div class="principles d-flex justify-content-between">
+
+            <div class="principles-pas h-100 d-flex flex-column align-items-center">
+                <div class="principles-pas-pic"></div>
+                <div class="principles-pas-cmt">
+                    <h3 class="text-center">PASSIONATE</h3>
+                    <p class="text-center">
+                        Each project starts with an in-depth brand research to ensure
+                        we only create products that serve a purpose. We merge art, design, and technology into exciting new solutions.
+                    </p>
+                </div>
+            </div>
+
+            <div class="principles-res h-100 d-flex flex-column justify-content-between align-items-center ">
+                <div class="principles-res-pic"></div>
+                <div class="principles-res-cmt">
+                    <h3 class="text-center">RESOURCEFUL</h3>
+                    <p class="text-center">
+                        Everything that we do has a strategic purpose. We use an agile approach in all of our projects and value customer collaboration.
+                        It guarantees superior results that fulfill our clients’ needs.
+                    </p>
+                </div>
+            </div>
+
+            <div class="principles-fri h-100 d-flex flex-column justify-content-between align-items-center">
+                <div class="principles-fri-pic"></div>
+                <div class="principles-fri-cmt">
+                    <h3 class="text-center">FRIEMDLY</h3>
+                    <p class="text-center">
+                        We are a group of enthusiastic folks who know how to put people first.
+                        Our success depends on our customers, and we strive to give them the best experience a company can provide.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>

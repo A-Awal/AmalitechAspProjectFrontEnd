@@ -6,35 +6,34 @@
     <title>@ViewData["Title"] - AmalitechAspProjectFrontEnd</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    @RenderSection("Styles", required:false)
 </head>
 <body>
     <div class="proper">
         <header class="">
             <partial name="_navPartial" />
         </header>
-        <div class="container">
-            <main role="main" class="pb-3">
+        <div class="container w-100 index-container ">
+            <main role="main" class="pb-3 w-100 h-100 ">
                 @RenderBody()
             </main>
         </div>
 
         <footer class="footer text-muted d-flex flex-column align-content-center justify-content-around">
-            <div class="talk">
-                <div class="talk-text d-flex justify-content-between align-content-center">
+            <div class="talk d-flex justify-content-center align-items-center">
+                <div class="talk-text d-flex justify-content-between align-items-center">
                     <div class="talk-p">
                         <h2 class="text-wrap">Let's talk about your project</h2>
                         <p class="text-wrap">Ready to take it to next level? Contact us today and
                         find out how our expertise can help your buisiness grow.
                         </p>
                     </div>
-                    <div class="talk-btn">
-                    <a class="btn">GET IN TOUCH</a>
+                    <div class="talk-btn align-self-center">
+                    <a class="btn bg-white border">GET IN TOUCH</a>
                     </div>
                     
                 </div>
-                <div class="talk-bg">
-                    <svg width="876" height="584" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient x1="0%" y1="50%" x2="100%" y2="50%" id="a"><stop stop-color="#5D0202" stop-opacity="0" offset="0%" /><stop stop-color="#5D0202" stop-opacity=".498" offset="100%" /></linearGradient></defs><g transform="matrix(-1 0 0 1 876 0)" fill="url(#a)" fill-rule="evenodd" opacity=".309"><g transform="translate(0 292)"><circle transform="matrix(0 -1 -1 0 292 292)" cx="146" cy="146" r="146" /><circle transform="matrix(-1 0 0 1 876 0)" cx="438" cy="146" r="146" /><circle transform="matrix(0 1 1 0 584 -584)" cx="730" cy="146" r="146" /></g><circle transform="matrix(0 -1 -1 0 292 292)" cx="146" cy="146" r="146" /><circle transform="matrix(-1 0 0 1 876 0)" cx="438" cy="146" r="146" /></g></svg>
-                </div>
+               
             </div>
             <div class="ft-cont d-flex flex-column justify-content-center">
                 <div class="ft-nav"><partial name="_footerNavPartial" /></div>

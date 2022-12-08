@@ -1,0 +1,52 @@
+﻿
+
+@{ 
+    string linkClass = "d-flex";
+    string appgraDisplay = "flex-column";
+    string appDesign = "d-flex";
+    string graDesign = "d-flex";
+
+    if( (string)ViewData["Title"] == "WebDesign")
+    {
+        linkClass = "d-none";
+        appgraDisplay = "flex-row";
+    }
+    if((string)ViewData["Title"] == "AppDesign")
+    {
+        appDesign = "d-none";
+        graDesign += " h-100 w-100";
+        linkClass += " w-50";
+        appgraDisplay += " w-50";
+    }
+    if((string)ViewData["Title"] == "GraphicDesign")
+    {
+        graDesign = "d-none";
+        appDesign += " h-100 w-100";
+        linkClass += " w-50";
+        appgraDisplay += " w-50";
+
+    }
+}
+    <div  class="pg-links-webDesign border justify-content-center align-items-center @linkClass">
+        <div  class="pg-links-webDesign-cmt d-flex flex-column justify-content-center align-items-center">
+            <h1 class="text-white">WEB DESIGN</h1>
+            <div class="d-flex justify-content-between align-items-center"><a class="text-white" asp-controller="Home" asp-action="WebDesign">VIEW PROJECTS</a><div id="wd" class="right-arrow ml-3"></div></div>
+        </div>
+    </div>
+
+    <div class="d-flex pg-links-appGra justify-content-between @appgraDisplay">
+        <div class="pg-links-appDesign border @appDesign justify-content-center align-items-center">
+            <div class="pg-links-appDesign-cmt d-flex flex-column justify-content-center align-items-center">
+                <h1 class="text-white">APP DESIGN</h1>
+                <div class="d-flex justify-content-between align-items-center"><a class="text-white" asp-controller="Home" asp-action="AppDesign">VIEW PROJECTS</a><div class="right-arrow ml-3"></div></div>
+            </div>
+        </div>
+
+        <div class="pg-links-graphicDesign border justify-content-center align-items-center @graDesign  ">
+            <div class="pg-links-graphicDesign-cmt d-flex flex-column justify-content-center align-items-center">
+                <h1 class="text-white">GRAPHIC DESIGN</h1>
+                <div class="d-flex justify-content-between align-items-center"><a class="text-white" asp-controller="Home" asp-action="GraphicDesign">VIEW PROJECTS</a><div class="right-arrow ml-3"></div></div>
+            </div>
+        </div>
+    </div>
+

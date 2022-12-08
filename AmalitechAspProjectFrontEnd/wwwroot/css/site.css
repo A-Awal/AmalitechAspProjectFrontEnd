@@ -97,6 +97,14 @@ body {
     z-index:1;
     
 }
+
+.index-container {
+    width: 100%;
+    height: 70%;
+    position: relative;
+    top: 1%;
+}
+
 .black-patch{
     position:absolute;
     bottom: 0;
@@ -115,29 +123,33 @@ body {
   line-height: 60px; /* Vertically center the text there */
 
 }
-    
-    .talk {
-        position:relative;
-        width: 100%;
-        height: 48%;
-        overflow: hidden;
-        background-color: var(--lightPeach);
-        border:1px solid var(--lightPeach);
-        border-radius: 7px;
-    }
+
+.talk {
+    position: relative;
+    width: 100%;
+    height: 48%;
+    overflow: hidden;
+    background-color: var(--lightPeach);
+    border: 1px solid var(--lightPeach);
+    border-radius: 7px;
+
+    background-image: url("../assets/shared/desktop/bg-pattern-call-to-action.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
 .talk-text {
     width: 91%;
     height: 51%;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    
     z-index: 1;
+
+
 }
         .talk-p{
             width: 49%;
             height:100%;
+
         }
             .talk-p h2{
                 height: 66%;
@@ -153,12 +165,7 @@ body {
             width:14%;
             height: 19%;
         }
-    .talk-bg{
-        position:absolute;
-        top:-50%;
-        right: -10%;
-        z-index:0;
-    }
+    
 
 .ft-cont{
     height: 20%;
@@ -189,3 +196,40 @@ body {
         height: 31%;
     }
     
+/*Page link styling
+    ----------------
+*/
+.pg-links-webDesign {
+    background-image: url("../assets/home/desktop/image-web-design-large.jpg");
+    height: 100%;
+    width: 49%;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.pg-links-appGra {
+    height: 100%;
+    width: 49%;
+}
+
+.pg-links-appDesign, .pg-links-graphicDesign {
+    height: 48%;
+    width: 100%;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.pg-links-appDesign {
+    background-image: url("../assets/home/desktop/image-app-design.jpg");
+}
+
+.pg-links-graphicDesign {
+    background-image: url(../assets/home/desktop/image-graphic-design.jpg);
+}
+.right-arrow {
+    width: 10px;
+    height: 16px;
+    background-image: url("../assets/shared/desktop/icon-right-arrow.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}

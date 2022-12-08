@@ -111,3 +111,10 @@ C:\Users\lenovo\Desktop\aspProject\AmalitechAspProjectFrontEnd\bin\Debug\netcore
 C:\Users\lenovo\Desktop\aspProject\AmalitechAspProjectFrontEnd\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\lenovo\Desktop\aspProject\AmalitechAspProjectFrontEnd\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_navPartial.cshtml.g.cs
 C:\Users\lenovo\Desktop\aspProject\AmalitechAspProjectFrontEnd\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_footerNavPartial.cshtml.g.cs
+C:\Users\lenovo\Desktop\aspProject\AmalitechAspProjectFrontEnd\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_linksPartial.cshtml.g.cs
+C:\Users\lenovo\Desktop\aspProject\AmalitechAspProjectFrontEnd\obj\Debug\netcoreapp3.1\Razor\Views\Home\WebDesign.cshtml.g.cs
+C:\Users\lenovo\Desktop\aspProject\AmalitechAspProjectFrontEnd\obj\Debug\netcoreapp3.1\Razor\Views\Home\AppDesign.cshtml.g.cs
+C:\Users\lenovo\Desktop\aspProject\AmalitechAspProjectFrontEnd\obj\Debug\netcoreapp3.1\Razor\Views\Home\GraphicDesign.cshtml.g.cs
+C:\Users\lenovo\Desktop\aspProject\AmalitechAspProjectFrontEnd\obj\Debug\netcoreapp3.1\Razor\Views\Home\AboutUs.cshtml.g.cs
+C:\Users\lenovo\Desktop\aspProject\AmalitechAspProjectFrontEnd\obj\Debug\netcoreapp3.1\Razor\Views\Home\Locations.cshtml.g.cs
+C:\Users\lenovo\Desktop\aspProject\AmalitechAspProjectFrontEnd\obj\Debug\netcoreapp3.1\Razor\Views\Home\Contact.cshtml.g.cs

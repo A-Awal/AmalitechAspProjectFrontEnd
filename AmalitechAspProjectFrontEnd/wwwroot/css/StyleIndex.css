@@ -1,0 +1,71 @@
+﻿:root {
+    /*Primary Colors*/
+    --peach: rgb(321, 129, 107);
+    --black: rgb(29, 28, 30);
+    --white: rgb(255, 255, 255);
+    /*Secondary Colors*/
+    --lightPeach: rgb(255, 173, 155);
+    --darkGrey: rgb(51, 49, 54);
+    --lightGrey: rgb(241, 243, 245);
+}
+
+
+.pg-header{
+    height: 31%;
+    overflow: hidden;
+    background-color: var(--lightPeach);
+    background-image: url("../assets/home/desktop/bg-pattern-hero-home.svg");
+    background-size:  contain;
+    background-repeat: no-repeat;
+
+    background-position:  right;
+    padding: 0% 0% 0 9%;
+
+
+}
+    .pg-header-pic{
+        background-image: url("../assets/home/desktop/image-hero-phone.png");
+        background-size: cover;
+        background-position-x: -30%;
+        background-position-y: -25%;
+        width: 40%;
+       //background-color: aqua;
+       position:relative;
+       right: -5%;
+
+        
+    }
+
+    .pg-header-cmt{
+        width: 60%;
+        height: 55%;
+        
+    }
+.pg-links{
+    height: 31%;
+
+}
+
+    
+.principles{
+    height: 21%;
+}
+.principles-pas, .principles-res, .principles-fri {
+    width: 32%;
+}
+.principles-pas-pic, .principles-res-pic, .principles-fri-pic {
+    width: 35%;
+    height: 39%;
+    border-radius: 50%;
+    background-color: rgb(250 215 207);
+    background-size: cover;
+}
+    .principles-pas-pic{
+        background-image:  url("../assets/home/desktop/illustration-passionate.svg");
+    }
+    .principles-res-pic{
+        background-image: url("../assets/home/desktop/illustration-resourceful.svg");
+    }
+    .principles-fri-pic{
+        background-image: url("../assets/home/desktop/illustration-friendly.svg");
+    }

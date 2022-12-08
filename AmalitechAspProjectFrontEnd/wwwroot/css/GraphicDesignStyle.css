@@ -1,0 +1,20 @@
+﻿:root {
+    /*Primary Colors*/
+    --peach: rgb(321, 129, 107);
+    --black: rgb(29, 28, 30);
+    --white: rgb(255, 255, 255);
+    /*Secondary Colors*/
+    --lightPeach: rgb(255, 173, 155);
+    --darkGrey: rgb(51, 49, 54);
+    --lightGrey: rgb(241, 243, 245);
+}
+
+.proj {
+    width: 30%;
+}
+
+.intro-web {
+    height: 13%;
+    background-image: url("../assets/web-design/desktop/bg-pattern-intro-web.svg");
+    background-color: var(--lightPeach);
+}
