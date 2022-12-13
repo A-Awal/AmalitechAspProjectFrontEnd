@@ -5,19 +5,24 @@
     --white: rgb(255, 255, 255);
     /*Secondary Colors*/
     --lightPeach: rgb(255, 173, 155);
+    --lighterPeach: rgb(251 241 240 / 0.95);
     --darkGrey: rgb(51, 49, 54);
     --lightGrey: rgb(241, 243, 245);
 }
+body{
+    height: 1964px;
+}
 
 .pg-links {
-    height: 25%;
+    height: 16%;
 }
 .pg-links-appGra{
     width: 100%;
 }
 
 .pg-links-appDesign, .pg-links-graphicDesign{
-    width: 47%;
+    width: 49%;
+    height: 100%;
 }
 
 
@@ -25,9 +30,56 @@
     height: 13%;
     background-image: url("../assets/web-design/desktop/bg-pattern-intro-web.svg");
     background-color: var(--lightPeach);
+    background-size: cover;
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-position:right;
+    border-radius: 10px;
+
+}
+.intro-web-text{
+    width: 66%;
+    height: 49%;
+
 }
 
-.proj{
-    width: 30%;
-    height: 40%;
+.proj {
+    width: 32%;
+    height: 48%;
+    background-color: var(--lighterPeach);
+    border-radius: 7px;
+}
+
+.proj-pic {
+    height: 67%;
+    background-size: cover;
+}
+.proj-text{
+    height: 33%;
+    
+}
+.proj-text h3{
+    color: var(--peach);
+}
+.proj-text p{
+    width: 82%;
+}
+
+.pic-exp {
+    background-image: url("../assets/web-design/desktop/image-express.jpg");
+}
+.pic-tran {
+    background-image: url("../assets/web-design/desktop/image-transfer.jpg");
+}
+.pic-pho {
+    background-image: url("../assets/web-design/desktop/image-photon.jpg");
+}
+.pic-bui{
+    background-image: url("../assets/web-design/desktop/image-builder.jpg");
+}
+.pic-blo {
+    background-image: url("../assets/web-design/desktop/image-blogr.jpg");
+}
+.pic-cam {
+    background-image: url("../assets/web-design/desktop/image-camp.jpg");
 }

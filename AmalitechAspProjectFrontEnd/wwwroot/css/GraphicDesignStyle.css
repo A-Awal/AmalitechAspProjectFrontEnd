@@ -5,16 +5,64 @@
     --white: rgb(255, 255, 255);
     /*Secondary Colors*/
     --lightPeach: rgb(255, 173, 155);
+    --lighterPeach: rgb(251 241 240 / 0.95);
     --darkGrey: rgb(51, 49, 54);
     --lightGrey: rgb(241, 243, 245);
 }
 
-.proj {
-    width: 30%;
+.central-container{
+    height: 30%;
 }
+.pg-links{
+    height: 20%;
+}
+.proj {
+    width: 32%;
+    height: 100%;
+    background-color: var(--lighterPeach);
+    border-radius: 7px;
+}
+.proj-pic {
+    height: 67%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.pic-tim{
+    background-image: url("../assets/graphic-design/desktop/image-change.jpg");
+}
+.pic-sci {
+    background-image: url("../assets/graphic-design/desktop/image-science.jpg");
+}
+.pic-box {
+    background-image: url("../assets/graphic-design/desktop/image-boxed-water.jpg");
+}
+.proj-text {
+    height: 33%;
+}
+
+    .proj-text h3 {
+        color: var(--peach);
+    }
+
+    .proj-text p {
+        width: 82%;
+    }
 
 .intro-web {
     height: 13%;
-    background-image: url("../assets/web-design/desktop/bg-pattern-intro-web.svg");
+    background-image: url("../assets/graphic-design/desktop/bg-pattern-intro-graphic.svg");
     background-color: var(--lightPeach);
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: left;
+}
+
+.intro-web-text {
+    width: 50%;
+    height: 49%;
+}
+.pg-links-appGra, .pg-links-webDesign {
+    width: 48%;
 }

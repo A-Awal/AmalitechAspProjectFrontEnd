@@ -1,2 +1,78 @@
-﻿body {
+﻿
+:root {
+    /*Primary Colors*/
+    --peach: rgb(321, 129, 107);
+    --black: rgb(29, 28, 30);
+    --white: rgb(255, 255, 255);
+    /*Secondary Colors*/
+    --lightPeach: rgb(255, 173, 155);
+    --lighterPeach: rgb(251 241 240 / 0.95);
+    --darkGrey: rgb(51, 49, 54);
+    --lightGrey: rgb(241, 243, 245);
 }
+
+body {
+    height: 1906px;
+}
+.canada {
+    height: 26%;
+}
+    .canada-text, .austra-text, .uk-text{
+        width: 66%;
+        background-color: var(--lighterPeach);
+        background-image: url("../assets/shared/desktop/bg-pattern-two-circles.svg");
+        background-blend-mode: darken;
+        background-size: contain;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .loc-txt-box{
+        width: 74%;
+        height: 46%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .loc-txt-box h2{
+        color: var(--peach);
+    }
+
+    .loc-txt-box-sm{
+        height: 52%;
+        width: 100%;
+        display: flex;
+       display: flex;
+       justify-content: space-between;
+    }
+
+    .canada-pic {
+        width: 32%;
+        background-image: url("../assets/locations/desktop/image-map-canada.png");
+        background-size: contain;
+    }
+.austra{height: 26%;}
+    /*.austra-text{
+        width: 66%;
+        background-color: var(--lightPeach);
+
+    }*/
+.austra-pic {
+    width: 32%;
+    background-image: url("../assets/locations/desktop/image-map-australia.png");
+    background-size: contain;
+}
+.uk{height: 26%;}
+    /*.uk-text {
+        width: 66%;
+        background-color: var(--lightPeach);
+
+    }   */
+    .uk-pic{
+        width: 32%;
+        background-image:url("../assets/locations/desktop/image-map-united-kingdom.png");
+        background-size: contain;
+    }
+

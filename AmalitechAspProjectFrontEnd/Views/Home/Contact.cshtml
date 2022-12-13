@@ -1,4 +1,4 @@
-﻿
+﻿@model ContactViewModel 
 @{
     ViewData["Title"] = "Contact";
 }
@@ -8,14 +8,29 @@
 }
 
 <div class="index-content h-100 w-100 d-flex flex-column justify-content-between align-items-center ">
-    <div class="intro-web w-100 h-25 d-flex flex-column justify-content-between bg-dark">
+    <div class="intro-web w-100 d-flex  justify-content-around align-items-center">
+        <div class="intro-web-txt">
+            <h1 class="text-white">Contact Us</h1>
+            <p class="text-white">Ready to take it to the next level? Let’s talk about your project or idea and
+            find out how we can help your business grow. If you are looking for unique digital
+            experiences that’s relatable to your users, drop us a line.
+            </p>
+        </div>
+        <div class="intro-web-form d-flex justify-content-between align-items-center">
+            <form class="d-flex flex-column w-100">
+                <input class="form-row" asp-for="@Model.Name"  placeholder="Name"/><br />
+                <input class="form-row" asp-for="@Model.EmailAdress" placeholder="Email Address" /><br />
+                <input class="form-row" asp-for="@Model.Phone" placeholder="Phone"/><br />
 
+                <textarea rows="3"  class="form-row" asp-for="@Model.YourMessage"  placeholder="Your Message"></textarea> <br />
+                <button class="btn bg-white align-self-end p-2" type="submit">Submit</button>
+
+            </form>
+        </div>
     </div>
 
-    <div class="w-100 h-25 d-flex justify-content-between flex-wrap bg-info">
-
-
-
+    <div class="pg-locations w-100 d-flex justify-content-between flex-wrap">
+        <partial name="_locationPartial" />
     </div>
 
 </div>

@@ -1,3 +1,106 @@
-﻿body {
-    height: 1640px;
+﻿:root {
+    /*Primary Colors*/
+    --peach: rgb(321, 129, 107);
+    --black: rgb(29, 28, 30);
+    --white: rgb(255, 255, 255);
+    /*Secondary Colors*/
+    --lightPeach: rgb(255, 173, 155);
+    --lighterPeach: rgb(251 241 240 / 0.95);
+    --darkGrey: rgb(51, 49, 54);
+    --lightGrey: rgb(241, 243, 245);
 }
+
+body {
+    height: 1578px;
+}
+
+.intro-web{
+    height:39%;
+    background-color: var(--lightPeach);
+    background-image: url("../assets/contact/desktop/bg-pattern-hero-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+/*    background-position: left;
+*/    background-position-y: bottom;
+}
+
+.intro-web-txt{
+    width: 40%;
+    height: 38%;
+}
+.intro-web-form{
+    height: 77%;
+    width: 29%;
+}
+button{
+    width: 35%;
+}
+input, textarea{
+    background-color: var(--lightPeach);
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid var(--white);
+}
+
+
+
+/* Location partial*/
+.pg-locations {
+    height: 30%;
+}
+
+.location {
+    width: 32%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.loc-txt {
+    width: 100%;
+    height: 31%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+    .loc-txt a {
+        background-color: var(--peach);
+        border-radius: 5%;
+        width: 43%;
+        color: var(--white);
+        height: 44%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+.loc-pic {
+    background-color: var(--lighterPeach);
+    width: 57%;
+    height: 55%;
+    border-radius: 50%;
+}
+
+.pic-aus, .pic-can, .pic-uk {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.pic-can {
+    background-image: url("../assets/shared/desktop/illustration-canada.svg");
+}
+
+.pic-aus {
+    background-image: url("../assets/shared/desktop/illustration-australia.svg");
+}
+
+.pic-uk {
+    background-image: url("../assets/shared/desktop/illustration-united-kingdom.svg");
+}
+
