@@ -10,16 +10,29 @@
     --lightGrey: rgb(241, 243, 245);
 }
 body {
+    height: 3532px;
+}
+
+.proper {
     height: 3468px;
 }
+
+.index-container {
+    height: 2604px;
+}
+
 .intro-web{
     height: 18%;
 }
     .intro-pic{ 
+        height: 100%;
         width: 43%; 
-        background-image: url("../assets/about/desktop/image-about-hero.jpg")
+        background-image: url("../assets/about/desktop/image-about-hero.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     .intro-text{ 
+        height: 100%;
         width: 57%;
         background-image: url("../assets/about/desktop/bg-pattern-hero-about-desktop.svg");
         background-color: var(--lightPeach);
@@ -33,12 +46,16 @@ body {
         width: 83%;
     }
 
-.world-class{}
+.world-class{
+    height: 25%;
+}
     .world-class-pic{
+        height:100%;
         width: 43%;
         background-image: url("../assets/about/desktop/image-world-class-talent.jpg")
     }
     .world-class-text{
+        height: 100%;
         width: 57%;
         background-color: var(--lighterPeach);
     }
@@ -111,8 +128,12 @@ body {
 /*Location partial*/
 
 
-.real-ideal{}
+.real-ideal{
+    height: 25%;
+
+}
 .real-ideal-text {
+    height: 100%;
     width: 57%;
     background-color: var(--lighterPeach);
 }
@@ -125,7 +146,140 @@ body {
         color: var(--peach);
     }
     .real-ideal-pic{
+        height: 100%;
         width: 43%;
         background-image: url("../assets/about/desktop/image-real-deal.jpg");
     }
 
+@media screen and (max-width: 768px){
+
+    body {
+        height: 4663px;
+    }
+
+    .proper {
+        height: 100%;
+    }
+
+    .index-container {
+        height: 3694px;
+    }
+
+    .intro-web{
+        height:17%;
+        flex-direction: column-reverse;
+    }
+        .intro-pic, .intro-text{
+            width: 100%;
+        }
+
+        .intro-text-box{
+            text-align: center;
+        }
+
+   .world-class{
+       height: 20%;
+       flex-direction: column;
+    }
+        .world-class-pic{
+            height: 50%;
+            width: 100%;
+            background-size: cover;
+            background-position: bottom;
+        }
+        .world-class-text{
+            width: 100%;
+            height: 50%;
+            text-align: center;
+        }
+   .pg-locations{
+       height: 33%;
+       flex-direction: column;
+       align-items: center;
+   }
+       .location{
+           height: 30%;
+           width: 51%;
+       }
+
+   .real-ideal{
+       height: 20%;
+       flex-direction: column-reverse;
+   }
+        .real-ideal-pic{
+            width: 100%;
+            height: 50%;
+            background-size: cover;
+            background-position: bottom;
+        }
+        .real-ideal-text{
+            text-align: center;
+            width: 100%;
+            height: 50%;
+        }
+   
+}
+
+@media screen and (max-width: 375px){
+
+    body{
+        height: 5094px;
+    }
+    .proper{
+        width: 100%;
+        height: 98%;
+    }
+    .index-container{
+        justify-content: center;
+        height: 3873px;
+        width: 95%;
+    }
+
+    .intro-web{
+        height: 20%;
+    }
+        .intro-text{
+            /*background-color: fuchsia;*/
+        }
+        .intro-text-box{
+            width: 95%;
+            margin-bottom: 35%;
+        }
+    .world-class{
+        height: 22%;
+    }
+        .world-class-pic{
+            height: 36%;
+            
+        }
+        .world-class-text{
+            height: 64%;
+        }
+        .world-class-text p{
+            width: 95%;
+        }
+    .pg-locations{
+        height: 31%;
+        margin: 30% 0;
+    }
+        .location{
+            width: 100%;
+        }
+
+    .real-ideal{
+        height: 22%;
+    }
+        .real-ideal-pic{
+            height: 36%;
+           
+        }
+        .real-ideal-text{
+            height: 64%;
+
+        }
+            .real-ideal-text-box{
+                width: 95%;
+                margin-bottom: 30%;
+            }
+
+}

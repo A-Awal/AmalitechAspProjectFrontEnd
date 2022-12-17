@@ -10,6 +10,18 @@
     --lightGrey: rgb(241, 243, 245);
 }
 
+body {
+    height: 2286px;
+}
+
+.proper {
+    height: 2222px;
+}
+
+.index-container {
+    height: 1358px;
+}
+
 .central-container{
     height: 30%;
 }
@@ -26,6 +38,7 @@
     height: 67%;
     background-size: cover;
     background-repeat: no-repeat;
+    border-radius: 7px;
 }
 
 .pic-tim{
@@ -39,6 +52,7 @@
 }
 .proj-text {
     height: 33%;
+    width: 100%;
 }
 
     .proj-text h3 {
@@ -63,6 +77,113 @@
     width: 50%;
     height: 49%;
 }
+
+.pg-links{
+    height: 25%;
+    flex-direction: row-reverse;
+}
 .pg-links-appGra, .pg-links-webDesign {
     width: 48%;
+}
+
+@media screen and (max-width: 768px){
+
+    body{
+        height: 2862px;
+    }
+    .proper{
+        height: 100%;
+    }
+    .index-container{
+        height: 1910px;
+    }
+
+    .intro-web{
+        height: 13%;
+    }
+    .intro-web-text{
+        width: 80%;
+    }
+
+    .central-container{
+        height: 53%;
+        flex-direction: column;
+    }
+
+    .proj{
+        display: flex;
+        height: 30%;
+        width: 100%;
+        align-items: center;
+    }
+    .proj-pic{
+        height: 100%;
+        width: 50%;
+    }
+    .proj-text {
+        width: 50%;
+    }
+
+/*links styling
+    =============
+*/
+    .pg-links{
+        height: 22%;
+    }
+    .pg-links {
+        flex-direction: column-reverse;
+    }
+
+
+    .pg-links-appGra {
+        width: 100%;
+        height: 47%;
+    }
+
+    .pg-links-webDesign {
+        width: 100%;
+        height: 47%;
+    }
+
+
+}
+
+@media screen and (max-width: 375px){
+    body{
+        height: 3747px;
+    }
+    .proper{
+        width: 100%;
+        height: 99%;
+    }
+    .index-container{
+        width: 95%;
+        height: 2550px;
+    }
+
+    .intro-web{
+        height: 13%;
+    }
+        .intro-web-text{
+            width: 95%;
+        }
+    .central-container{
+        height: 60%;
+    }
+        .proj{
+           flex-direction: column;
+        }
+            .proj-pic{
+                width: 100%;
+                height: 70%;
+            }
+            .proj-text{
+                width: 100%;
+                height: 30%;
+            }
+    .pg-links{
+        height: 21%;
+    }
+
+
 }

@@ -50,74 +50,102 @@ h3, .h3 {
     line-height: 26px;
 }
 
+html {
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    
+    /*min-height: 100%;*/
+}
+
+body {
+    position:relative;
+
+    font-family: Jost, sans-serif;
+    width: 100vw;
+    height: 2940px;
+    /*padding: 0, 11%, 0, 11%;*/
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+
+}
+.black-patch {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 393px;
+    background-color: var(--black);
+}
+
+
+
+/* styling the proper 
+-------------------------------------------------- */
+/* 2804px proper 
+    index-container 2164px*/
+
+
+.proper {
+    /*position: absolute;*/
+    width: 77%;
+    height: 98%;
+   
+    /*top: 50%;
+    left: 50%;
+    transform: translate(-50%, -51%);*/
+    z-index:1;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /*background-color: aqua;*/
+}
+
+.index-container {
+    width: 100%;
+    /*height: 77%;*/
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /*background-color: rosybrown;*/
+}
+
+
+
 /*Header
 ---------
 */
 header {
     width: 100%;
     height: 2.3%;
-    
-    
 }
 
 
 a.navbar-brand {
-  white-space: normal;
-  text-align: center;
-  word-break: break-all;
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+}
+
+.nav-item{
+    font-size: 14px;
+    font-weight: 400;
+    list-style: none;
 }
 
 
-/* Sticky footer styles
--------------------------------------------------- */
-html {
-    position: relative;
-    
-    /*min-height: 100%;*/
-}
-
-body {
-    /* Margin bottom by footer height */
-    font-family: Jost, sans-serif;
-    width: 100vh;
-    height: 2222px;
-    padding: 6%, 11%, 0, 11%;
-    overflow-x:hidden;
-    
-}
-
-.proper {
-    position: absolute;
-    width: 78%;
-    height: 94%;
-   
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index:1;
-    
-}
-
-.index-container {
-    width: 100%;
-    height: 70%;
-    position: relative;
-    top: 1%;
-}
-
-.black-patch{
-    position:absolute;
-    bottom: 0;
-    width: 100%;
-    height: 18%;
-    background-color:var(--black);
-}
+/*Footer styling
+=================
+*/
 
 .footer {
-  position: absolute;
-  bottom: 0;
+  
   width: 100%;
-  height: 28%;
+  height: 613px;
+  justify-content: space-around;
 
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
@@ -125,6 +153,11 @@ body {
 }
 
 .talk {
+    display: flex;
+    
+
+    justify-content:center;
+    align-items: center;
     position: relative;
     width: 100%;
     height: 48%;
@@ -141,20 +174,20 @@ body {
 .talk-text {
     width: 91%;
     height: 51%;
-    
+    color: var(--white);
     z-index: 1;
-
 
 }
         .talk-p{
             width: 49%;
             height:100%;
-
+            
         }
             .talk-p h2{
                 height: 66%;
                 width: 58%;
             }
+
             .talk-p p{
                 width: 100%;
                 height: 35%;
@@ -162,18 +195,26 @@ body {
             }
 
         .talk-btn{
-            width:14%;
-            height: 19%;
+            /*height: 19%;*/
+            color: var(--black);
+            
         }
     
 
 .ft-cont{
-    height: 20%;
-        
+    border-bottom: 1px solid var(--darkGrey);
 }
-.partial-nav{
+
+/*.partial-nav{
     width: 33%;
+    background-color: red;
+}*/
+.ft-ul {
+    width: 40%;
+    justify-content: space-between;
+    align-items: center;
 }
+
 
 /*contact info*/
     .contact-us{
@@ -232,4 +273,190 @@ body {
     background-image: url("../assets/shared/desktop/icon-right-arrow.svg");
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+@media screen and (max-width: 768px){
+    
+    
+    .footer{
+        height: 687px;
+        justify-content: space-around;
+    }
+
+    .talk{
+        height: 51%;
+    }
+    
+    .talk-text{
+        flex-direction: column;
+        justify-content: center;
+        width: 83%;
+        height: 67%;
+        text-align: center;
+    }
+    .talk-p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+    }
+        .talk-p h2 {
+            width: 335px;
+            height: 98px;
+        }
+    .talk-p p{
+        height: 52px;
+    }
+
+    .talk-btn {
+        height: 56px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 27%;
+        height: 24%;
+    }
+
+    .ft-ul{
+        width: 70%;
+    }
+
+    /* Page links styling
+        ================
+    */
+
+    /*.pg-links-webDesign{
+        width: 100%;
+        height: 30%;
+    }
+    .pg-links-appGra{
+        width: 100%;
+        height:66%;
+    }*/
+
+
+}
+
+@media screen and (max-width: 375px){
+
+    .proper{
+        height: 100%;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .index-container{
+        width: 95%;
+    }
+
+    h1{
+        font-size: 2em;
+        line-height: 2em;
+    }
+    
+    header{
+        height: 96px;
+    }
+    header nav{
+        height: 100%;
+    }
+
+    .black-patch{
+        height: 18%;
+    }
+
+    .footer{
+        height: 1005px;
+    }
+
+
+    .talk{
+        height: 38%;
+        background-position-x: 45%;
+    }
+    .talk-text{
+        height: 76%;
+        width: 74.4%;
+        justify-content: space-between
+    }
+
+    .talk-p h2{
+        font-size: 32px;
+        font-weight: 500;
+        width: 100%;
+    }
+
+    .talk-p {
+        font-size: 15px;
+        width: 100%;
+    }
+
+    .talk-btn{
+        height: 35px;
+        width: fit-content;
+    }
+
+    .ft-cont{
+        height: 50%;
+        align-items: center;
+    }
+
+    .ft-nav{
+        height: 70%;
+       display: flex;
+       flex-direction: column;
+    }
+    .contact-us{
+        height: 52%;
+        flex-direction: column;
+    }
+
+        .street, .mobile {
+
+            width: 100%;
+            text-align: center;
+            /*background-color: cadetblue;*/
+        }
+        .social-media{
+            width: 100%;
+        }
+    .ft-Adress{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ft-nav{
+        
+        width: 100%;
+    }
+    .nav-cont{
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        height: 100%;
+        
+    }
+
+    .nav-item{
+        width: 100%;
+        height: fit-content;
+        line-height: 32px;
+        width: 100%;
+        height: 32%;
+        text-transform: uppercase;
+        text-align: center;
+        margin-left: -10%;
+    }
+
+    .ft-ul {
+        height: 60%;
+        width: 100%;
+        flex-direction:column;
+        align-items: start;
+        justify-content: space-between;
+    }
 }

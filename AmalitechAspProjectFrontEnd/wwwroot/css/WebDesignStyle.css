@@ -10,9 +10,14 @@
     --lightGrey: rgb(241, 243, 245);
 }
 body{
-    height: 1964px;
+    height: 2796px;
 }
-
+.proper{
+    height: 2732px;
+}
+.index-container{
+    height: 1868px;
+}
 .pg-links {
     height: 16%;
 }
@@ -43,7 +48,13 @@ body{
 
 }
 
+.proj-cont{
+    height: 50%;
+    flex-direction: column;
+}
+
 .proj {
+    flex-direction: column;
     width: 32%;
     height: 48%;
     background-color: var(--lighterPeach);
@@ -82,4 +93,82 @@ body{
 }
 .pic-cam {
     background-image: url("../assets/web-design/desktop/image-camp.jpg");
+}
+
+@media screen and (max-width: 768px){
+
+    body{
+        height: 3908px;
+    }
+
+    .proper{
+        height: 99%;
+    }
+
+
+    .index-container{
+        height: 2946px;
+    }
+
+    .intro-web{
+        height: 9%;
+    }
+    .proj-cont{
+        height: 69%;
+
+        flex-direction: column;
+    }
+    .proj{
+        height: 15%;
+        width: 100%;
+        flex-direction: row;
+    }
+    .proj-pic{
+        height: 100%;
+    }
+    .proj-text{
+        height: 100%;
+    }
+
+    .pg-links-appGra{
+        flex-direction: column;
+    }
+
+    .pg-links-appDesign, .pg-links-graphicDesign{
+        width: 100%;
+        height: 45%;
+    }
+
+}
+
+@media screen and (max-width: 375px){
+    body{
+        height: 5301px;
+    }
+    .proper{
+        justify-content: space-between;
+        height: 100%;
+        width: 100%;
+    }
+    .index-container{
+        height: 4104px;
+        width: 95%;
+        justify-content: space-between;
+    }
+    .intro-web{
+        height: 10%;
+    }
+        .intro-web-text{
+            width: 100%;
+        }
+    .proj-cont{
+        height: 75%;
+    }
+        .proj{
+            flex-direction: column;
+        }
+
+    .pg-links{
+        height: 10%;
+    }
 }

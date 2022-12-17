@@ -9,38 +9,52 @@
     --lightGrey: rgb(241, 243, 245);
 }
 
+/*Index-container 2079px*/
+.index-container{
+    height: 2079px;
+}
+
+
+/*Header styling
+    -=----------
+*/
 
 .pg-header{
-    height: 31%;
+    height: 31%; /* 2804px proper index-container 2164px*/
     overflow: hidden;
     background-color: var(--lightPeach);
     background-image: url("../assets/home/desktop/bg-pattern-hero-home.svg");
-    background-size:  contain;
+    background-size:  unset;
     background-repeat: no-repeat;
 
     background-position:  right;
-    padding: 0% 0% 0 9%;
+    /*background-position-y: 15%;*/
 
-
+    border-radius: 20px;
 }
-    .pg-header-pic{
+    .pg-header a{
+        width: 25%;
+        height: 100px;
+    }
+    .pg-header-pic {
         background-image: url("../assets/home/desktop/image-hero-phone.png");
-        background-size: cover;
-        background-position-x: -30%;
-        background-position-y: -25%;
-        width: 40%;
-       //background-color: aqua;
-       position:relative;
-       right: -5%;
+        width: 100%;
+        height: 100%;
+        background-position-x: 110%;
+        background-position-y: 10%;
+        background-repeat: no-repeat;
 
-        
+        flex-direction: column;
+        align-items: ;
+
+        padding: 0 0 0 9%;
     }
 
-    .pg-header-cmt{
-        width: 60%;
-        height: 55%;
-        
-    }
+        .pg-header-cmt{
+            width: 60%;
+            height: 55%;
+        }
+
 .pg-links{
     height: 31%;
 
@@ -48,16 +62,19 @@
 
     
 .principles{
-    height: 21%;
+    height: 20%;
+    text-align: center;
 }
 .principles-pas, .principles-res, .principles-fri {
     width: 32%;
+    flex-direction: column;
+    height: 100%;
 }
 .principles-pas-pic, .principles-res-pic, .principles-fri-pic {
     width: 35%;
     height: 39%;
     border-radius: 50%;
-    background-color: rgb(250 215 207);
+    /*background-color: rgb(250 215 207);*/
     background-size: cover;
 }
     .principles-pas-pic{
@@ -69,3 +86,149 @@
     .principles-fri-pic{
         background-image: url("../assets/home/desktop/illustration-friendly.svg");
     }
+.principles-pas-cmt, .principles-res-cmt, .principles-fri-cmt{
+    width: 100%;
+    height: 39%;
+}
+
+
+@media screen and (max-width: 768px){
+    body {
+        height: 3311px;
+    }
+
+    .proper {
+        height: 99%;
+        width: 90%;
+    }
+
+    .index-container {
+        height: 2402px;
+    }
+
+    .pg-header {
+        height: 35%;
+        
+    }
+        .pg-header a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 35%;
+            height: 15%;
+        }
+
+        .pg-header-pic {
+            padding: 5% 0;
+            align-items: start;
+            justify-content: start;
+            flex-direction: row;
+            background-position-y: -350%;
+            background-position-x: 45%;
+        }
+
+
+        .pg-header-cmt{
+            text-align: center;
+            width: 83%;
+            height: 50%;
+            align-items: center;
+        }
+
+
+    /* Page links styling
+        ================
+    */
+
+    .pg-links-webDesign {
+        width: 100%;
+        height: 30%;
+    }
+
+    .pg-links-appGra {
+        width: 100%;
+        height: 66%;
+    }
+
+
+
+    .principles {
+        height: 27%;
+        flex-direction: column;
+    }
+        .principles-pas, .principles-res, .principles-fri{
+            width: 100%;
+            height: 30%;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .principles-pas-pic, .principles-res-pic, .principles-fri-pic{
+            width: 29%;
+            height: 100%;
+        }
+        .principles-pas-cmt, .principles-res-cmt, .principles-fri-cmt{
+            width: 64%;
+        }
+
+    .pg-links {
+        height: 29%;
+        flex-direction: column; 
+    }
+
+
+    
+}
+
+@media screen and (max-width: 375px){
+    body {
+        height: 4499px;
+    }
+
+    .proper {
+        height: 99%;
+        width: 100%;
+    }
+
+    .index-container {
+        height: 3398px;
+        /width: 95%;
+    }
+
+        .pg-header{
+            height: 25%;
+
+        }
+            .pg-header-pic{
+                background-position-x: 50%;
+            }
+            .pg-header-cmt{
+                height: 37%;
+                width: 100%;
+            }
+                .pg-header-cmt h1{
+                    font-size: 32px;
+                    line-height: 35px;
+                }
+                .pg-header-cmt a{
+                    width: 50%;
+                }
+        .principles{
+            height: 24%;
+        }
+            .principles-pas, .principles-res, .principles-fri{
+                flex-direction: column;
+
+            }   
+            .principles-pas-cmt, .principles-res-cmt, .principles-fri-cmt{
+                width: 95%;
+            }
+        .pg-links{
+            height: 41%;
+        }
+            .pg-links h1{
+                font-size: 28px;
+            }
+            
+
+}

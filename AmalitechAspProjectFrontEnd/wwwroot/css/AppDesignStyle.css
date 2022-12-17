@@ -5,14 +5,23 @@
     --black: rgb(29, 28, 30);
     --white: rgb(255, 255, 255);
     /*Secondary Colors*/
+    --lighterPeach: rgb(251 241 240 / 0.95);
     --lightPeach: rgb(255, 173, 155);
     --darkGrey: rgb(51, 49, 54);
     --lightGrey: rgb(241, 243, 245);
 }
-
 body {
-    height: 1964px;
+    height: 2796px;
 }
+
+.proper {
+    height: 2732px;
+}
+
+.index-container {
+    height: 1868px;
+}
+
 
 .pg-links {
     height: 16%;
@@ -36,10 +45,12 @@ body {
     background-image: url("../assets/app-design/desktop/bg-pattern-intro-app.svg");
     background-color: var(--lightPeach);
 /*    background-size: cover;
-*/    background-blend-mode: darken;
+*/    
+    background-blend-mode: darken;
     background-repeat: no-repeat;
     background-position: left;
     background-position-x: -50%;
+    border-radius: 7px;
 
 }
     
@@ -50,14 +61,20 @@ body {
     height: 49%;
 }
 
+.proj-cont{
+    width: 100%;
+    height: 50%;
+}
+
 .proj {
+    flex-direction: column;
     width: 32%;
     height: 48%;
-    background-color: var(--lighterPeach);
     border-radius: 7px;
 }
 
 .proj-pic {
+    width: 100%;
     height: 67%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -82,6 +99,8 @@ body {
 
 .proj-text {
     height: 33%;
+    width: 100%;
+    background-color: var(--lighterPeach);
 }
 
     .proj-text h3 {
@@ -91,3 +110,102 @@ body {
     .proj-text p {
         width: 82%;
     }
+
+@media screen and (max-width: 768px){
+
+   /* html{
+        width: 100vw;
+    }
+    */
+    body {
+        height: 3908px;
+        width: 100%;
+    }
+
+    .proper {
+        height: 99%;
+        width: 90%;
+    }
+
+
+    .index-container {
+        height: 2946px;
+    }
+
+    .intro-web {
+        height: 9%;
+    }
+
+    .proj-cont {
+        height: 57%;
+        flex-direction: column;
+    }
+
+    .proj {
+        height: 15%;
+        width: 100%;
+        flex-direction: row;
+      }
+
+    .proj-pic {
+        height: 100%;
+        width: 50%;
+    }
+
+    .proj-text {
+        height: 100%;
+        width: 50%;
+    }
+    .proj-empty{
+        height: 0;
+    }
+
+    .pg-links{
+        flex-direction: column;
+        
+    }
+
+    .pg-links-appGra{
+        width: 100%;
+        height: 47%;
+    }
+    .pg-links-webDesign{
+        width: 100%;
+        height: 47%;
+    }
+}
+
+@media screen and (max-width: 375px){
+    body{
+        height: 4783px;
+    }
+    .proper{
+        width: 100%;
+        height: 98%;
+    }
+    .index-container{
+        width: 95%;
+        height: 3586px;
+        justify-content: space-between;
+    }
+
+        .intro-web-text{
+            width: 80%;
+        }
+    .proj-cont {
+        height: 71%;
+    }
+        .proj{
+            flex-direction: column;
+            height: 19%;
+        }
+            .proj-pic{
+                width: 100%;
+                height: 70%;
+            }
+            .proj-text{
+                width: 100%;
+                height: 30%;
+            }
+        
+}
