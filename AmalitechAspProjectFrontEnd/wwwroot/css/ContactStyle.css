@@ -38,7 +38,7 @@ body {
 
 .intro-web{
     height: 48%;
-    background-color: var(--lightPeach);
+    background-color: var(--peach);
     background-image: url("../assets/contact/desktop/bg-pattern-hero-desktop.svg");
     background-repeat: no-repeat;
     background-size: auto;
@@ -74,7 +74,7 @@ body {
     height: 36%;
 }
 
-.location {
+/*.location {
     width: 32%;
     height: 100%;
     display: flex;
@@ -95,7 +95,7 @@ body {
     .loc-txt a {
         background-color: var(--peach);
         border-radius: 5%;
-        width: 43%;
+        width: fit-content;
         color: var(--white);
         height: 44%;
         text-align: center;
@@ -106,8 +106,8 @@ body {
 
 .loc-pic {
     background-color: var(--lighterPeach);
-    width: 57%;
-    height: 55%;
+    width: 202px;
+    height: 202px;
     border-radius: 50%;
 }
 
@@ -126,7 +126,7 @@ body {
 
     .pic-uk {
         background-image: url("../assets/shared/desktop/illustration-united-kingdom.svg");
-    }
+    }*/
 
 @media screen and (max-width: 768px){
 
@@ -157,7 +157,6 @@ body {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            /*text-align: center;*/
         }
 
     .pg-locations{
@@ -219,10 +218,8 @@ body {
         height: 498px;
         width: 80%;
         margin-bottom: 15%;
-        background-color: beige;
     } 
         .ft-cont{
             height: 100%;
-            background-color: paleturquoise;
         }
 }

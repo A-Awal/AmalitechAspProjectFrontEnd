@@ -31,7 +31,7 @@ body {
 .proj {
     width: 32%;
     height: 100%;
-    background-color: var(--lighterPeach);
+    background-color: var(--lightPeach);
     border-radius: 7px;
 }
 .proj-pic {
@@ -55,10 +55,6 @@ body {
     width: 100%;
 }
 
-    .proj-text h3 {
-        color: var(--peach);
-    }
-
     .proj-text p {
         width: 82%;
     }
@@ -66,11 +62,12 @@ body {
 .intro-web {
     height: 13%;
     background-image: url("../assets/graphic-design/desktop/bg-pattern-intro-graphic.svg");
-    background-color: var(--lightPeach);
+    background-color: var(--peach);
     background-blend-mode: darken;
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     background-position: left;
+    border-radius: 7px;
 }
 
 .intro-web-text {

@@ -31,21 +31,15 @@ body {
 .pg-links-appGra, .pg-links-webDesign {
     width: 48%;
     height: 100%;
-    background-color: aquamarine;
 }
 
-/*.pg-links-appDesign, .pg-links-graphicDesign {
-    width: 49%;
-    height: 100%;
-}*/
 
 
 .intro-web {
     height: 13%;
     background-image: url("../assets/app-design/desktop/bg-pattern-intro-app.svg");
-    background-color: var(--lightPeach);
-/*    background-size: cover;
-*/    
+    background-color: var(--peach);
+    
     background-blend-mode: darken;
     background-repeat: no-repeat;
     background-position: left;
@@ -70,7 +64,7 @@ body {
     flex-direction: column;
     width: 32%;
     height: 48%;
-    border-radius: 7px;
+    
 }
 
 .proj-pic {
@@ -78,6 +72,7 @@ body {
     height: 67%;
     background-size: cover;
     background-repeat: no-repeat;
+    border-radius: 7px 7px 0 0;
 }
 
 .pic-air{
@@ -100,12 +95,10 @@ body {
 .proj-text {
     height: 33%;
     width: 100%;
-    background-color: var(--lighterPeach);
+    background-color: var(--lightPeach);
+    border-radius: 0 0 7px 7px;
 }
 
-    .proj-text h3 {
-        color: var(--peach);
-    }
 
     .proj-text p {
         width: 82%;

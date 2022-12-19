@@ -7,10 +7,10 @@ for details on configuring this project to bundle and minify static web assets. 
     --black: rgb(29, 28, 30);
     --white: rgb(255, 255, 255);
     /*Secondary Colors*/
+    --lighterPeach: rgb(251 241 240 / 0.95);
     --lightPeach: rgb(255, 173, 155);
     --darkGrey: rgb(51, 49, 54);
     --lightGrey: rgb(241, 243, 245);
-
 }
 
 
@@ -20,7 +20,7 @@ for details on configuring this project to bundle and minify static web assets. 
 .btn-dark-idle{
     background-color: var(--white);
 }
-.btn-dark-idle:active{
+.btn-dark-idle:hover{
     background-color: var(--lightPeach);
 }
 
@@ -28,14 +28,42 @@ for details on configuring this project to bundle and minify static web assets. 
     background-color: var(--peach);
 }
 
-.btn-light-idle:active {
+.btn-light-idle:hover {
     background-color: var(--lightPeach);
 }
 
-/*headers
+.link-hover:hover{
+    background-color: var(--lightPeach);
+    background-blend-mode: screen;
+}
+
+.tbmr {
+    background: linear-gradient(to bottom right, var(--lightGrey), var(--white));
+}
+.tbm {
+    background: linear-gradient(to bottom, var(--lightGrey), var(--white));
+}
+.ttp {
+    background: linear-gradient(to top, var(--lightGrey), var(--white));
+}
+
+.proj-text {
+    --h: var(--peach);
+}
+.proj-text:hover {
+    background-color: var(--peach);
+    --h: var(--white);
+    color: var(--white);
+}
+
+    .proj-text h3 {
+        color: var(--h);
+    }
+
+    /*headers
 ---------------
 */
-h1, .h1{
+    h1, .h1{
     font-size: 48px;
     line-height: 48px;
 }
@@ -55,7 +83,6 @@ html {
     overflow-x: hidden;
     overflow-y: scroll;
     
-    /*min-height: 100%;*/
 }
 
 body {
@@ -64,7 +91,6 @@ body {
     font-family: Jost, sans-serif;
     width: 100vw;
     height: 2940px;
-    /*padding: 0, 11%, 0, 11%;*/
     overflow-x: hidden;
     display: flex;
     justify-content: center;
@@ -83,34 +109,25 @@ body {
 
 /* styling the proper 
 -------------------------------------------------- */
-/* 2804px proper 
-    index-container 2164px*/
 
 
 .proper {
-    /*position: absolute;*/
     width: 77%;
     height: 98%;
-   
-    /*top: 50%;
-    left: 50%;
-    transform: translate(-50%, -51%);*/
+
     z-index:1;
     
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /*background-color: aqua;*/
 }
 
 .index-container {
     width: 100%;
-    /*height: 77%;*/
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /*background-color: rosybrown;*/
 }
 
 
@@ -162,9 +179,9 @@ a.navbar-brand {
     width: 100%;
     height: 48%;
     overflow: hidden;
-    background-color: var(--lightPeach);
+    background-color: var(--peach);
     border: 1px solid var(--lightPeach);
-    border-radius: 7px;
+    border-radius:  7px;
 
     background-image: url("../assets/shared/desktop/bg-pattern-call-to-action.svg");
     background-repeat: no-repeat;
@@ -173,7 +190,7 @@ a.navbar-brand {
 
 .talk-text {
     width: 91%;
-    height: 51%;
+    height: 60%;
     color: var(--white);
     z-index: 1;
 
@@ -185,17 +202,16 @@ a.navbar-brand {
         }
             .talk-p h2{
                 height: 66%;
-                width: 58%;
+                width: 100%;
             }
 
             .talk-p p{
                 width: 100%;
-                height: 35%;
-                line-height:26px;
+                height: 60%;
+                line-height: 26px;
             }
 
         .talk-btn{
-            /*height: 19%;*/
             color: var(--black);
             
         }
@@ -205,10 +221,6 @@ a.navbar-brand {
     border-bottom: 1px solid var(--darkGrey);
 }
 
-/*.partial-nav{
-    width: 33%;
-    background-color: red;
-}*/
 .ft-ul {
     width: 40%;
     justify-content: space-between;
@@ -233,9 +245,18 @@ a.navbar-brand {
             }
 
     .social-media{
-        width: 17%;
-        height: 31%;
+        width: 30%;
+        height: 24px;
+        align-self: end;
+        margin-bottom: 2%;
     }
+
+        .som{
+            fill: var(--peach);
+        }
+        .som:hover{
+            fill: var(--lightPeach);
+        }
     
 /*Page link styling
     ----------------
@@ -260,20 +281,107 @@ a.navbar-brand {
     border-radius: 10px;
 }
 
-.pg-links-appDesign {
-    background-image: url("../assets/home/desktop/image-app-design.jpg");
+    .pg-links-appDesign {
+        background-image: url("../assets/home/desktop/image-app-design.jpg");
+    }
+
+    .pg-links-graphicDesign {
+        background-image: url(../assets/home/desktop/image-graphic-design.jpg);
+    }
+    .right-arrow {
+        width: 10px;
+        height: 16px;
+        background-image: url("../assets/shared/desktop/icon-right-arrow.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+/*LOCATIONS USED IN AbousUs and ContactUs pages */
+
+.location {
+    width: 32%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.pg-links-graphicDesign {
-    background-image: url(../assets/home/desktop/image-graphic-design.jpg);
+.loc-txt {
+    width: 100%;
+    height: 31%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.right-arrow {
-    width: 10px;
-    height: 16px;
-    background-image: url("../assets/shared/desktop/icon-right-arrow.svg");
-    background-repeat: no-repeat;
+
+    .loc-txt a {
+        background-color: var(--peach);
+        border-radius: 5%;
+        width: 43%;
+        color: var(--white);
+        height: 44%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+.location {
+    width: 32%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.loc-txt {
+    width: 100%;
+    height: 31%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+    .loc-txt a {
+        background-color: var(--peach);
+        border-radius: 5%;
+        width: fit-content;
+        color: var(--white);
+        height: 44%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+.loc-pic {
+    background-color: var(--lighterPeach);
+    width: 202px;
+    height: 202px;
+    border-radius: 50%;
+}
+
+.pic-aus, .pic-can, .pic-uk {
     background-size: cover;
+    background-repeat: no-repeat;
 }
+
+.pic-can {
+    background-image: url("../assets/shared/desktop/illustration-canada.svg");
+}
+
+.pic-aus {
+    background-image: url("../assets/shared/desktop/illustration-australia.svg");
+}
+
+.pic-uk {
+    background-image: url("../assets/shared/desktop/illustration-united-kingdom.svg");
+}
+
 
 @media screen and (max-width: 768px){
     
@@ -290,8 +398,6 @@ a.navbar-brand {
     .talk-text{
         flex-direction: column;
         justify-content: center;
-        width: 83%;
-        height: 67%;
         text-align: center;
     }
     .talk-p {
@@ -303,18 +409,17 @@ a.navbar-brand {
     }
         .talk-p h2 {
             width: 335px;
-            height: 98px;
         }
-    .talk-p p{
-        height: 52px;
-    }
+    /*.talk-p p{
+        height: 60%;
+    }*/
 
     .talk-btn {
         height: 56px;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 27%;
+        width: fit-content;
         height: 24%;
     }
 
@@ -322,20 +427,7 @@ a.navbar-brand {
         width: 70%;
     }
 
-    /* Page links styling
-        ================
-    */
-
-    /*.pg-links-webDesign{
-        width: 100%;
-        height: 30%;
-    }
-    .pg-links-appGra{
-        width: 100%;
-        height:66%;
-    }*/
-
-
+  
 }
 
 @media screen and (max-width: 375px){
@@ -371,21 +463,20 @@ a.navbar-brand {
         height: 1005px;
     }
 
-
     .talk{
         height: 38%;
         background-position-x: 45%;
     }
     .talk-text{
-        height: 76%;
-        width: 74.4%;
-        justify-content: space-between
+        height: 70%;
+        width: 90%;
+        justify-content: space-between;
     }
 
     .talk-p h2{
+       
         font-size: 32px;
         font-weight: 500;
-        width: 100%;
     }
 
     .talk-p {
@@ -417,7 +508,6 @@ a.navbar-brand {
 
             width: 100%;
             text-align: center;
-            /*background-color: cadetblue;*/
         }
         .social-media{
             width: 100%;

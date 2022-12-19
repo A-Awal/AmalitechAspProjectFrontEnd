@@ -15,6 +15,7 @@ body {
     height: 1970px;
 }
 
+
 .proper {
     height: 1906px;
 }
@@ -27,7 +28,8 @@ body {
     .canada-text, .austra-text, .uk-text{
         height: 100%;
         width: 66%;
-        background-color: var(--lighterPeach);
+
+        background-color: var(--lightPeach);
         background-image: url("../assets/shared/desktop/bg-pattern-two-circles.svg");
         background-blend-mode: darken;
         background-size: contain;
@@ -35,16 +37,19 @@ body {
 
 
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
+
+
+        border-radius: 10px;
     }
 
     .loc-txt-box{
-        width: 74%;
-        height: 46%;
+        height: 60%;
+        width: 70%;
+        margin-left: 10%;
         display: flex;
         flex-direction: column;
-        
     }
     .loc-txt-box h2{
         color: var(--peach);
@@ -64,32 +69,31 @@ body {
     background-image: url("../assets/locations/desktop/image-map-canada.png");
     background-size: cover;
     background-repeat: no-repeat;
+
+    border-radius: 10px;
 }
 .austra{height: 26%;}
-    /*.austra-text{
-        width: 66%;
-        background-color: var(--lightPeach);
-
-    }*/
+    
 .austra-pic {
     height: 100%;
     width: 32%;
     background-image: url("../assets/locations/desktop/image-map-australia.png");
     background-size: cover;
     background-repeat: no-repeat;
+
+    border-radius: 10px;
 }
 .uk{height: 26%;}
-    /*.uk-text {
-        width: 66%;
-        background-color: var(--lightPeach);
-
-    }   */
+    
 .uk-pic {
     height: 100%;
     width: 32%;
     background-image: url("../assets/locations/desktop/image-map-united-kingdom.png");
     background-size: cover;
     background-repeat: no-repeat;
+
+    border-radius: 10px;
+
 }
 
 @media screen and (max-width: 768px){
@@ -117,6 +121,13 @@ body {
     .canada-text, .austra-text, .uk-text, .canada-pic, .austra-pic, .uk-pic {
         height: 47%;
         width: 100%;
+        justify-content: center;
+    }
+
+    
+    .loc-txt-box{
+        margin: 0;
+        justify-self: center;
     }
 
 }
@@ -127,7 +138,7 @@ body {
     }
     .proper{
         width: 100%;
-        height: 99%;
+        //height: 99%;
     }
     .index-container{
         height: 2222px;

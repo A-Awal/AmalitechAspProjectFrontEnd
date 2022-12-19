@@ -21,8 +21,10 @@ body {
     height: 2604px;
 }
 
-.intro-web{
+.intro-web {
     height: 18%;
+    background-color: var(--peach);
+    border-radius: 10px;
 }
     .intro-pic{ 
         height: 100%;
@@ -30,15 +32,17 @@ body {
         background-image: url("../assets/about/desktop/image-about-hero.jpg");
         background-repeat: no-repeat;
         background-size: cover;
+        border-radius: 0 10px 10px 0;
     }
     .intro-text{ 
         height: 100%;
         width: 57%;
         background-image: url("../assets/about/desktop/bg-pattern-hero-about-desktop.svg");
-        background-color: var(--lightPeach);
+        background-color: var(--peach);
         background-position: left;
         background-size: cover;
         background-blend-mode: darken;
+        border-radius: 10px 0 0 10px;
     }
 
     .intro-text-box{
@@ -52,12 +56,14 @@ body {
     .world-class-pic{
         height:100%;
         width: 43%;
-        background-image: url("../assets/about/desktop/image-world-class-talent.jpg")
+        background-image: url("../assets/about/desktop/image-world-class-talent.jpg");
+        border-radius: 10px 0 0 10px;
     }
     .world-class-text{
         height: 100%;
         width: 57%;
-        background-color: var(--lighterPeach);
+        background-color: var(--lightPeach);
+        border-radius: 0 10px 10px 0;
     }
 
     .world-class-text h2{
@@ -73,10 +79,9 @@ body {
     height: 14%;
 }
 
-.location{
+/*.location {
     width: 32%;
     height: 100%;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -103,12 +108,11 @@ body {
         justify-content: center;
     }
 
-    .loc-pic {
-        background-color: var(--lighterPeach);
-        width: 57%;
-        height: 55%;
-        border-radius: 50%;
-    }
+.loc-pic {
+    width: 57%;
+    height: 55%;
+    border-radius: 50%;
+}
 
     .pic-aus, .pic-can, .pic-uk{
         background-size: cover;
@@ -123,7 +127,7 @@ body {
 
     .pic-uk{
         background-image: url("../assets/shared/desktop/illustration-united-kingdom.svg");
-    }
+    }*/
 
 /*Location partial*/
 
@@ -135,7 +139,8 @@ body {
 .real-ideal-text {
     height: 100%;
     width: 57%;
-    background-color: var(--lighterPeach);
+    background-color: var(--lightPeach);
+    border-radius: 10px 0 0 10px;
 }
 
     .real-ideal-text-box{
@@ -149,6 +154,7 @@ body {
         height: 100%;
         width: 43%;
         background-image: url("../assets/about/desktop/image-real-deal.jpg");
+        border-radius: 0 10px 10px 0;
     }
 
 @media screen and (max-width: 768px){
