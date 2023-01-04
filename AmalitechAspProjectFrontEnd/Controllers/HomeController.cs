@@ -52,6 +52,17 @@ namespace AmalitechAspProjectFrontEnd.Controllers
             return View();
         }
 
+        [HttpPost]
+        public IActionResult Contact( [Bind("Name", "EmailAdress", "Phone", "YourMessage")] ContactViewModel vm)
+        {
+            if (!ModelState.IsValid) {
+                return View(vm);
+            }
+                
+            
+            return RedirectToAction(nameof(Contact));
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

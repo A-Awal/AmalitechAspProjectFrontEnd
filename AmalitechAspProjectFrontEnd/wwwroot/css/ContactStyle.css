@@ -64,9 +64,18 @@ body {
             border-top: 0;
             border-left: 0;
             border-right: 0;
-            border-bottom: 1px solid var(--white);
-        }
+            border-bottom: 1px solid var(--lightGrey);
 
+        }
+            input:focus {
+                outline: none;
+                box-shadow: none;
+                border-bottom: 2px solid var(--white);
+            }
+    .icon-error{
+        width: 24px;
+        background-image: url("../assets/contact/desktop/icon-error.svg");
+    }
 
 
 /* Location partial*/
