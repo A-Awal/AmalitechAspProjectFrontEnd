@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "GFbXCNUxJ5qvFwLk4x2q0PJbrXTt+2mf3SqQBGcQfhBocfuInWAZc9iEgaHJBvff9ujTrz2croGRbBsDnE0qyg==",
+  "dgSpecHash": "jK0TDzMhjdp7VDFna5sCHU9oeFK94RZCjj8YdDV9nFMH1ZSxcaRj3pS2jJoG2sZiKPVjC55znh9cUVDL+c3TXQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\lenovo\\Desktop\\aspProject\\AmalitechAspProjectFrontEnd.csproj",
   "expectedPackageFiles": [
@@ -110,7 +110,8 @@
     "C:\\Users\\lenovo\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.3\\system.threading.tasks.extensions.4.5.3.nupkg.sha512",
     "C:\\Users\\lenovo\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Users\\lenovo\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
-    "C:\\Users\\lenovo\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
+    "C:\\Users\\lenovo\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
+    "C:\\Users\\lenovo\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.32\\microsoft.netcore.app.host.win-x64.3.1.32.nupkg.sha512"
   ],
   "logs": []
 }
