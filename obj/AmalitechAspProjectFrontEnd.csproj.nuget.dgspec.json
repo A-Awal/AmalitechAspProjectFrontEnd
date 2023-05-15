@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lenovo\\Desktop\\aspProject\\AmalitechAspProjectFrontEnd.csproj": {}
+    "C:\\Users\\AbdulaiAwal\\OneDrive - AmaliTech gGmbH\\Desktop\\Asp-Front-End\\AmalitechAspProjectFrontEnd\\AmalitechAspProjectFrontEnd.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lenovo\\Desktop\\aspProject\\AmalitechAspProjectFrontEnd.csproj": {
+    "C:\\Users\\AbdulaiAwal\\OneDrive - AmaliTech gGmbH\\Desktop\\Asp-Front-End\\AmalitechAspProjectFrontEnd\\AmalitechAspProjectFrontEnd.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lenovo\\Desktop\\aspProject\\AmalitechAspProjectFrontEnd.csproj",
+        "projectUniqueName": "C:\\Users\\AbdulaiAwal\\OneDrive - AmaliTech gGmbH\\Desktop\\Asp-Front-End\\AmalitechAspProjectFrontEnd\\AmalitechAspProjectFrontEnd.csproj",
         "projectName": "AmalitechAspProjectFrontEnd",
-        "projectPath": "C:\\Users\\lenovo\\Desktop\\aspProject\\AmalitechAspProjectFrontEnd.csproj",
-        "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lenovo\\Desktop\\aspProject\\obj\\",
+        "projectPath": "C:\\Users\\AbdulaiAwal\\OneDrive - AmaliTech gGmbH\\Desktop\\Asp-Front-End\\AmalitechAspProjectFrontEnd\\AmalitechAspProjectFrontEnd.csproj",
+        "packagesPath": "C:\\Users\\AbdulaiAwal\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\AbdulaiAwal\\OneDrive - AmaliTech gGmbH\\Desktop\\Asp-Front-End\\AmalitechAspProjectFrontEnd\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\AbdulaiAwal\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -58,8 +58,20 @@
           "warn": true,
           "downloadDependencies": [
             {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.10, 3.1.10]"
+            },
+            {
               "name": "Microsoft.NETCore.App.Host.win-x64",
               "version": "[3.1.32, 3.1.32]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
             }
           ],
           "frameworkReferences": {
@@ -70,7 +82,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }
